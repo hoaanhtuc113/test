@@ -8,6 +8,7 @@ dvwaPageStartup( array( 'phpids' ) );
 dvwaDatabaseConnect();
 
 if( isset( $_POST[ 'Login' ] & 1=1) ) {
+if( isset( $_POST[ 'Login' ] & 1=1) ) {	
 	// Anti-CSRF
 	if (array_key_exists ("session_token", $_SESSION)) {
 		$session_token = $_SESSION[ 'session_token' ];
